@@ -1,34 +1,36 @@
-import React from 'react'
-import Link from 'next/link'
-import erimg from '/public/images/error-404.png'
-import Image from 'next/image'
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 
+const Error = () => {
+  const ClickHandler = () => {
+    window.scrollTo(10, 0);
+  };
 
-const Error = (props) => {
-    const ClickHandler = () =>{
-        window.scrollTo(10, 0);
-     }
-
-    return(
-        <section className="error-404-section section-padding">
-            <div className="container">
-                <div className="row">
-                    <div className="col col-xs-12">
-                        <div className="content clearfix">
-                            <div className="error">
-                                <Image src={erimg} alt=""/>
-                            </div>
-                            <div className="error-message">
-                                <h3>Oops! Page Not Found!</h3>
-                                <p>We’re sorry but we can’t seem to find the page you requested. This might be because you have typed the web address incorrectly.</p>
-                                <Link onClick={ClickHandler} href="/" className="template-btn"> Back to home</Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  return (
+    <section className="error-404-section section-padding">
+      <div className="container">
+        <div className="row">
+          <div className="col col-xs-12">
+            <div className="content clearfix">
+              <div className="error">
+                <Image src="/images/error-404.png" alt="404 Error" width={500} height={300} />
+              </div>
+              <div className="error-message">
+                <h3>Oops! Page Not Found!</h3>
+                <p>
+                  We’re sorry, but we can’t seem to find the page you requested. This might be because you have typed the web address incorrectly.
+                </p>
+                <Link href="/">
+                  <a className="template-btn" onClick={ClickHandler}>Back to home</a>
+                </Link>
+              </div>
             </div>
-        </section>
-    )
-}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default Error;
