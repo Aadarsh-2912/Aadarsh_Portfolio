@@ -1,32 +1,33 @@
-name: Deploy Portfolio to GitHub Pages
+name: Deploy Next.js to GitHub Pages
 
 on:
   push:
     branches:
-      - main  # Deploy whenever changes are pushed to the main branch
+      - main  # Change this to your default branch
+
+permissions:
+  contents: write
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
 
-      - name: Install Dependencies
+      - name: Install dependencies
         run: npm install
 
-      - name: Build Project
-        run: npm run build  # Adjust if your build script is different
+      - name: Build and Export
+        run: npm run build
 
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          branch: gh-pages
-          folder: out  # Change this to 'dist' or 'build' if needed
-          clean: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out  # This is where Next.js exports static files
