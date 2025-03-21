@@ -29,7 +29,7 @@ const Portfolio = () => {
             pImg2: 'images/protfolio/hope/img-2.png',
             pImg3: 'images/protfolio/hope/img-3.png',
             vedio: "",
-            des: 'HOPE is a comprehensive website integrating frontend and backend functionalities. It features a responsive design, user input storage, and enhanced UX through JavaScript. The backend uses MongoDB to manage and store data effectively.',
+            des: 'HOPE is a comprehensive website integrating frontend and backend functionalities. It features a responsive design, user input storage, and enhanced UX through JavaScript. The backend uses MongoDB to manage and store data effectively. <br> <a href="https://aadarsh-2912.github.io/Funngro_website/" target="_blank"><b>Click Here</b></a> to visit the website.',
         },
         {
             Id: "2",
