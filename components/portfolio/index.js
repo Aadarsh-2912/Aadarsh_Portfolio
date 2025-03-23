@@ -46,7 +46,7 @@ const Portfolio = () => {
         },
         {
             Id:"3",
-            heading:"FUNNGRO website",
+            heading:"FUNNGRO",
             subHeading:"Revamped Design, Same Powerful Platform",
             authorName:'Ken Wiliamm',
             value:'$900',
