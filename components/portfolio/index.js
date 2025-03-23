@@ -3,18 +3,17 @@ import Link from 'next/link';
 import PortfolioSingle from '../portfolioSingle';
 
 const Portfolio = () => {
-    const [open, setOpen] = React.useState(false);
-
-    function handleClose() {
-        setOpen(false);
-    }
-
+    const [open, setOpen] = useState(false);
     const [state, setState] = useState({});
 
     const handleClickOpen = (item) => {
         setOpen(true);
         setState(item);
     };
+
+    function handleClose() {
+        setOpen(false);
+    }
 
     const portfolio = [
         {
@@ -29,10 +28,13 @@ const Portfolio = () => {
             pImg2: 'images/protfolio/hope/img-2.png',
             pImg3: 'images/protfolio/hope/img-3.png',
             vedio: "",
-            des: `The revamped version of Funngro introduces a modernized web experience with a more intuitive design, improved navigation, and optimized performance. The UI/UX has been refreshed to enhance readability, accessibility, and engagement across all devices. A restructured layout ensures effortless browsing, making it easier for users to explore opportunities, post jobs, and connect with teen freelancers. Performance improvements, including faster load times and enhanced responsiveness, provide a smoother user experience. The visual appeal has been refined with an updated color scheme, typography, and layout, creating a more professional yet engaging look. Clearer call-to-action buttons and better content structuring improve user interaction, making the platform more efficient and accessible. This redesign enhances both the aesthetics and functionality of Funngro, ensuring a seamless experience for teens and businesses alike.
-
-            <br>
-            <a href="https://aadarsh-2912.github.io/Funngro_website/" target="_blank"><b>Click Here</b></a> to visit the website.`
+            des: `The revamped version of Funngro introduces a modernized web experience with a more intuitive design, improved navigation, and optimized performance. 
+            The UI/UX has been refreshed to enhance readability, accessibility, and engagement across all devices. A restructured layout ensures effortless browsing, making it easier for users to explore opportunities, post jobs, and connect with teen freelancers. 
+            <br/><br/> 📩 Let’s connect and bring your ideas to life! 🚀
+            <br/><br/>
+            <a href="https://aadarsh-2912.github.io/Funngro_website/" target="_blank" rel="noopener noreferrer">
+                Click Here
+            </a> to visit the website.`
         },
         {
             Id: "2",
@@ -46,7 +48,7 @@ const Portfolio = () => {
             pImg2: 'images/protfolio/abstract/img-2.png',
             pImg3: 'images/protfolio/abstract/img-3.png',
             vedio: "",
-            des: 'KLEENEX is a Python-based file optimization and cleanup tool using Tkinter. It helps users manage storage on Windows by detecting and removing duplicate files, cleaning junk and temporary files, and identifying large files. The tool features a home screen, an intuitive sidebar for navigation, and settings for appearance customization. It requires Python 3.x, Tkinter, Pillow, and standard Python libraries like OS and shutil. Users can launch the app and follow on-screen instructions for efficient system cleanup.',
+            des: `KLEENEX is a Python-based file optimization and cleanup tool using Tkinter. It helps users manage storage on Windows by detecting and removing duplicate files, cleaning junk and temporary files, and identifying large files.`
         },
     ];
 
@@ -68,7 +70,7 @@ const Portfolio = () => {
                                         <div className="">
                                             <div className="tp-protfolio-single">
                                                 <div className="tp-protfolio-img">
-                                                    <img src={port.pImg1} alt="" />
+                                                    <img src={port.pImg1} alt={port.heading} />
                                                 </div>
                                                 <div className="tp-protfolio-text">
                                                     <h2>{port.heading}</h2>
