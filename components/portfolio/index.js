@@ -28,7 +28,7 @@ const Portfolio = () => {
             pImg2: 'images/protfolio/hope/img-2.png',
             pImg3: 'images/protfolio/hope/img-3.png',
             vedio: "",
-            des: `The revamped version of Funngro introduces a modernized web experience with a more intuitive design, improved navigation, and optimized performance. The UI/UX has been refreshed to enhance readability, accessibility, and engagement across all devices. A restructured layout ensures effortless browsing, making it easier for users to explore opportunities, post jobs, and connect with teen freelancers.<br/><br/>📩 Let’s connect and bring your ideas to life! 🚀<br/><br/><a href="https://aadarsh-2912.github.io/Funngro_website/" target="_blank" rel="noopener noreferrer">Click Here</a> to visit the website.`
+            des: `The revamped version of Funngro introduces a modernized web experience with a more intuitive design, improved navigation, and optimized performance. The UI/UX has been refreshed to enhance readability, accessibility, and engagement across all devices. A restructured layout ensures effortless browsing, making it easier for users to explore opportunities, post jobs, and connect with teen freelancers.<br/><br/><a href="https://aadarsh-2912.github.io/Responsive_Website/" target="_blank" rel="noopener noreferrer">Click Here</a> to visit the website.`
         },
         {
             Id: "2",
