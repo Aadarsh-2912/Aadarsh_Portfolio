@@ -31,8 +31,9 @@ const Portfolio = () => {
             vedio: "",
             des: `The revamped version of Funngro introduces a modernized web experience with a more intuitive design, improved navigation, and optimized performance. The UI/UX has been refreshed to enhance readability, accessibility, and engagement across all devices. A restructured layout ensures effortless browsing, making it easier for users to explore opportunities, post jobs, and connect with teen freelancers. Performance improvements, including faster load times and enhanced responsiveness, provide a smoother user experience. The visual appeal has been refined with an updated color scheme, typography, and layout, creating a more professional yet engaging look. Clearer call-to-action buttons and better content structuring improve user interaction, making the platform more efficient and accessible. This redesign enhances both the aesthetics and functionality of Funngro, ensuring a seamless experience for teens and businesses alike.
 
-<br>
-<a href="https://aadarsh-2912.github.io/Funngro_website/" target="_blank"><b>Click Here</b></a> to visit the website.`        },
+            <br>
+            <a href="https://aadarsh-2912.github.io/Funngro_website/" target="_blank"><b>Click Here</b></a> to visit the website.`
+        },
         {
             Id: "2",
             heading: "KLEENEX",
