@@ -22,7 +22,7 @@ const PortfolioSingle = ({ maxWidth, open, onClose, title, doc, image1, image2, 
                                     <h2>{title}</h2>
                                 </div>
                                 <div className="tp-p-details-section">
-                                    <p>{doc}</p>
+                                    <p dangerouslySetInnerHTML={{ __html: doc }}></p>
                                     <p>This project showcases an innovative approach to design and development. The seamless blend of modern aesthetics and functional excellence ensures a top-tier user experience. Through careful planning and execution, every element has been optimized to enhance usability and visual appeal.</p>
                                     <p>By integrating industry-leading tools and methodologies, this project demonstrates how effective design can elevate a brand's identity. The combination of creativity and technical expertise ensures a compelling and immersive user journey.</p>
                                     <div className="row">
