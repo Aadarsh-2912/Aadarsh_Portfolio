@@ -38,11 +38,25 @@ const Portfolio = () => {
             value: '$400',
             date: '15 Jan 2021',
             videosId: 'r_hYR53r61M',
-            pImg1: 'images/protfolio/abstract/img-1.jpg',
-            pImg2: 'images/protfolio/abstract/img-2.png',
-            pImg3: 'images/protfolio/abstract/img-3.png',
+            pImg1: 'images/protfolio/kleenex/img-1.jpg',
+            pImg2: 'images/protfolio/kleenex/img-2.png',
+            pImg3: 'images/protfolio/kleenex/img-3.png',
             vedio: "",
             des: `KLEENEX is a Python-based file optimization and cleanup tool using Tkinter. It helps users manage storage on Windows by detecting and removing duplicate files, cleaning junk and temporary files, and identifying large files.`
+        },
+        {
+            Id:"3",
+            heading:"FUNNGRO Website Revamp",
+            subHeading:"Revamped Design, Same Powerful Platform",
+            authorName:'Ken Wiliamm',
+            value:'$900',
+            date:'12 Jan 2021',
+            videosId:'LUSa3yRTB9A',
+            pImg1:'images/protfolio/funngro/img-1.jpg',
+            pImg2:'images/protfolio/funngro/img-2.png',
+            pImg3:'images/protfolio/funngro/img-3.png',
+            vedio:"",
+            des:'The revamped version of Funngro introduces a modernized web experience with a more intuitive design, improved navigation, and optimized performance. The UI/UX has been refreshed to enhance readability, accessibility, and engagement across all devices. A restructured layout ensures effortless browsing, making it easier for users to explore opportunities, post jobs, and connect with teen freelancers. Performance improvements, including faster load times and enhanced responsiveness, provide a smoother user experience. The visual appeal has been refined with an updated color scheme, typography, and layout, creating a more professional yet engaging look. Clearer call-to-action buttons and better content structuring improve user interaction, making the platform more efficient and accessible. This redesign enhances both the aesthetics and functionality of Funngro, ensuring a seamless experience for teens and businesses alike.<br/><br/><a href="https://aadarsh-2912.github.io/Funngro_website/" target="_blank" rel="noopener noreferrer">Click Here</a> to visit the website.'
         },
     ];
 
